@@ -1,0 +1,20 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+<form action="/Postagens/salvar">
+
+Titulo:  <br>  <input type="text" name="p.titulo" ><br>
+
+Conteudo <br>  <input type="text" name="p.conteudo"><br><br>
+
+Autor    <br>  <input type="text" name="p.autor"><br><br>
+
+Data     <br>  <input type="date" name="p.data"><br><br>
+
+<button>Enter</button>
+
+
+</form>
+
+<a href="@{Postagens.listar}">pagina de listar</a>
